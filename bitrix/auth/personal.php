@@ -13,7 +13,12 @@ if ($userId > 0) {
     $userPoints = $user['points'];
 }
 
+echo "<br>";
 echo "User Points: " . $userPoints;
+echo "<br>";
+echo "<br> Твой ID: " . $userId;
+echo "<br>";
+echo "<br>";
 
 //Форма списание и начисления баллов
 echo '<form method="POST" action="">
@@ -68,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// PointsView - Вывод истории транзакций с пагинацией
+// Вывод истории транзакций с пагинацией
 ShowTransactionHistory($userId, $APPLICATION);
 
 function AddTransaction($userId, $amount, $type) {
@@ -114,5 +119,7 @@ function ShowTransactionHistory($userId, $application) {
         echo "<a href=\"$url\">$i</a> ";
     }
 }
+
+
 
 ?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
