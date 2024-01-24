@@ -1,5 +1,3 @@
-## [Demo](http://u2343679.isp.regruhosting.ru)
-
 ***
 
 ### Тестовое задание
